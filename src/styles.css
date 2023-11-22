@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F0F8FF;
+  color: #444452;
+  font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5%;
+}
+
+.flex-item {
+  /* width: 50%; */
+  margin: 2.5%;
+}
+
+/* Body */
+mat-card {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}

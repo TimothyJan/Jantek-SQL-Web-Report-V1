@@ -1,0 +1,15 @@
+.logo img{
+  margin: auto;
+  max-width: 400px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
