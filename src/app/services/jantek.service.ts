@@ -6,7 +6,7 @@ import { AlertService } from './alert.service';
   providedIn: 'root'
 })
 export class JantekService {
-  isAuthenticated: boolean = true;
+  isAuthenticated: boolean = false;
   isAuthenticatedChange: Subject<boolean> = new Subject<boolean>();
 
   demoUsername:string = "jantek";
@@ -25,5 +25,10 @@ export class JantekService {
     }
     this._alertService.openSnackBar("Incorrect Login");
     return false;
+  }
+
+  logoff() {
+    this.isAuthenticatedChange.next(false);
+    this._alertService.openSnackBar("Logoff Successful");
   }
 }

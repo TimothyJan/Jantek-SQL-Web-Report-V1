@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { JantekService } from '../../../services/jantek.service';
 
 // const today = new Date(Date.now()-((7)*86400000));
 const today = new Date();
@@ -32,6 +33,10 @@ export class WebReportComponent implements OnInit{
 
   ngOnInit(): void {
   }
+
+  constructor(
+    private _jantekService: JantekService
+    ) {}
 
   sortByChanged(event: any) {
     switch(event) {
@@ -109,9 +114,13 @@ export class WebReportComponent implements OnInit{
     }
   }
 
-  submit() {
+  onSubmit() {
     if (this.form.valid) {
       console.log(this.form.value);
     }
+  }
+
+  onLogoff() {
+    this._jantekService.logoff();
   }
 }

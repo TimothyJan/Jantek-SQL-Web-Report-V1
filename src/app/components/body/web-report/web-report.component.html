@@ -4,7 +4,7 @@
     <mat-card-title>Jantek Web Report</mat-card-title>
   </mat-card-header>
 
-  <form [formGroup]="form" (ngSubmit)="submit()">
+  <form [formGroup]="form">
 
     <mat-grid-list cols="3" rowHeight="110px">
       <!-- Type -->
@@ -208,12 +208,14 @@
       <button
         mat-raised-button
         type="submit"
-        color="primary" >
+        color="primary"
+        (click)="onSubmit()">
         Report
       </button>
       <button
         mat-raised-button
-        color="primary" >
+        color="primary"
+        (click)="onLogoff()">
         Logoff
       </button>
     </div>
