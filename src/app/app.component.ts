@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Jantek-SQL-Login';
+  title = 'Jantek-SQL-Web-Report-V1';
 }
