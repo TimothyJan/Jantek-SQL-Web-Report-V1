@@ -1,0 +1,52 @@
+mat-card {
+  padding:20px;
+  min-width: 720px;
+  width:100%
+}
+
+mat-card-header {
+  background: #3366CC;
+}
+
+mat-card-title {
+  font-weight: bold;
+  color: white;
+}
+
+.title-center {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+mat-label {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+mat-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+mat-radio-button {
+  margin: 5px;
+  width: 150px;
+}
+
+mat-form-field {
+  width:200px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin: 10px;
+}
+
+

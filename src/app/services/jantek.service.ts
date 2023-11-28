@@ -6,7 +6,7 @@ import { AlertService } from './alert.service';
   providedIn: 'root'
 })
 export class JantekService {
-  isAuthenticated: boolean = false;
+  isAuthenticated: boolean = true;
   isAuthenticatedChange: Subject<boolean> = new Subject<boolean>();
 
   demoUsername:string = "jantek";

@@ -7,6 +7,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 const modules = [
   MatSlideToggleModule,
@@ -15,7 +19,11 @@ const modules = [
   MatFormFieldModule,
   MatButtonModule,
   MatSelectModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatGridListModule,
+  MatRadioModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];
 
 @NgModule({

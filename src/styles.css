@@ -23,17 +23,6 @@ body, html {
 }
 
 .flex-item {
-  /* width: 50%; */
+  /* width: 100%; */
   margin: 2.5%;
-}
-
-/* Body */
-mat-card {
-  display: flex;
-  justify-content: center;
-}
-
-.mat-form-field {
-  width: 100%;
-  min-width: 300px;
 }
