@@ -6,7 +6,7 @@ import { AlertService } from './alert.service';
   providedIn: 'root'
 })
 export class JantekService {
-  isAuthenticated: boolean = true;
+  isAuthenticated: boolean = false;
   isAuthenticatedChange: Subject<boolean> = new Subject<boolean>();
 
   demoUsername:string = "jantek";
@@ -16,9 +16,9 @@ export class JantekService {
     private _alertService: AlertService
     ) { }
 
-  login(loginUsername: string, loginPassword: string): boolean {
+  login(form: any): boolean {
     /* Check if user in database */
-    if(loginUsername == this.demoUsername && loginPassword == this.demoPassword) {
+    if(form.username == this.demoUsername && form.password == this.demoPassword) {
       this.isAuthenticatedChange.next(true);
       this._alertService.openSnackBar("Login Successful");
       return true;

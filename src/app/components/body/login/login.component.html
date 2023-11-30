@@ -1,25 +1,30 @@
 
 <mat-card class="login">
 
-  <mat-form-field>
-    <mat-label>Username</mat-label>
-    <input matInput id="Username">
-  </mat-form-field>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput id="Username" formControlName="username">
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Password</mat-label>
-    <input matInput id="Password">
-  </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput id="Password" type="password" formControlName="password">
+    </mat-form-field>
 
-  <button
-    mat-raised-button
-    type="submit"
-    color="primary"
-    (click)="onLogin()">
-    Login
-  </button>
+    <br>
 
-  <p>Jantek Web Report is a product of JANTEK ELECTRONICS INC.</p>
+    <button
+      mat-raised-button
+      type="button"
+      color="primary"
+      (click)="onLogin()"
+      (keyup.enter)="onLogin()">
+      Login
+    </button>
+
+    <p>Jantek Web Report is a product of JANTEK ELECTRONICS INC.</p>
+  </form>
 
 </mat-card>
 

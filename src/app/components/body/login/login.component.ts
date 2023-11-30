@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { JantekService } from '../../../services/jantek.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,19 @@ import { JantekService } from '../../../services/jantek.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  username:string;
-  password:string;
+  form: FormGroup = new FormGroup({
+    username: new FormControl(""),
+    password: new FormControl("")
+  })
 
   constructor(
     private _jantekService: JantekService,
   ) {}
 
   onLogin() {
-    this.username = (<HTMLInputElement>document.getElementById("Username")).value;
-    this.password = (<HTMLInputElement>document.getElementById("Password")).value;
-    this._jantekService.login(this.username, this.password);
+    if (this.form.valid) {
+      this._jantekService.login(this.form.value);
+    }
   }
 
 }

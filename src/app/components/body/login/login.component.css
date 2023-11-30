@@ -5,9 +5,13 @@ mat-card {
   width: 100%;
 }
 
-.mat-form-field {
+mat-form-field {
   width: 100%;
   min-width: 300px;
+}
+
+button {
+  width: 100%;
 }
 
 .login {
