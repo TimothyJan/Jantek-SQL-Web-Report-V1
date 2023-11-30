@@ -33,7 +33,7 @@ body, html {
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: 0% 0%;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0pt;
   left: 0pt;
 
@@ -41,7 +41,6 @@ body, html {
 
 .footer_contents {
   height:24px;
-  width: 1000px;
+  /* width: 1000px; */
   margin:auto;
-
 }

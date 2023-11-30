@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebReportComponent } from './web-report.component';
+import { WebReportMobileComponent } from './web-report-mobile.component';
 
-describe('WebReportComponent', () => {
-  let component: WebReportComponent;
-  let fixture: ComponentFixture<WebReportComponent>;
+describe('WebReportMobileComponent', () => {
+  let component: WebReportMobileComponent;
+  let fixture: ComponentFixture<WebReportMobileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [WebReportComponent]
+      declarations: [WebReportMobileComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(WebReportComponent);
+    fixture = TestBed.createComponent(WebReportMobileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

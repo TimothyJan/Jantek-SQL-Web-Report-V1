@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { JantekService } from '../../../services/jantek.service';
 
 // const today = new Date(Date.now()-((7)*86400000));
@@ -7,11 +7,11 @@ const today = new Date();
 const dayInMs = 86400000; // that is: 24 * 60 * 60 * 1000
 
 @Component({
-  selector: 'app-web-report',
-  templateUrl: './web-report.component.html',
-  styleUrl: './web-report.component.css'
+  selector: 'app-web-report-mobile',
+  templateUrl: './web-report-mobile.component.html',
+  styleUrl: './web-report-mobile.component.css'
 })
-export class WebReportComponent implements OnInit{
+export class WebReportMobileComponent implements OnInit{
   form: FormGroup = new FormGroup({
     type: new FormControl("Time Card Detail"),//, Validators.required),
     sortBy: new FormControl("Employee #"),//, Validators.required),

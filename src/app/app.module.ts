@@ -11,7 +11,7 @@ import { MaterialModule } from './material.module';
 
 import { BodyComponent } from './components/body/body.component';
 import { LoginComponent } from './components/body/login/login.component';
-import { WebReportComponent } from './components/body/web-report/web-report.component';
+import { WebReportMobileComponent } from './components/body/web-report-mobile/web-report-mobile.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -20,7 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     BodyComponent,
     LoginComponent,
-    WebReportComponent,
+    WebReportMobileComponent,
     HeaderComponent,
     FooterComponent
   ],
