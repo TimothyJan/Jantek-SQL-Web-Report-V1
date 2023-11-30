@@ -1,5 +1,5 @@
 {
-  "name": "jantek-sql-login",
+  "name": "jantek-sql-web-report-v1",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
